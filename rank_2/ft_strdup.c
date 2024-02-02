@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 char *ft_strdup(char *src)
 {
@@ -9,7 +8,7 @@ char *ft_strdup(char *src)
         return(NULL);
     while(src[i])
     i++;
-    str = malloc * (i + 1);
+    str = malloc(i + 1);
     i = 0;
     while(src[i])
     {

@@ -3,7 +3,7 @@ void ft_putnbr(int nbr)
 {
     if(nbr > 9)
     ft_putnbr(nbr / 10);
-    write(1, &"01234567890"[nbr % 10], 1);
+    write(1, &"0123456789"[nbr % 10], 1);
 }
 int main(int ac, char **av)
 {
