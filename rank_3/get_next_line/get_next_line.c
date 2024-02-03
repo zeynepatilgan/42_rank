@@ -70,6 +70,7 @@ char *next_line(char *line, int fd)
         }
         if(i == 0 && !line)
             return(free(tmp), NULL);
+        tmp[i] = '\0';
         line = ft_strjoin(line, tmp);
         free(tmp);
     }
